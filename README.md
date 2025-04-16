@@ -3,7 +3,7 @@
 
 
 
-Code for the KDD2024 submitted paper [DDTExplainer: Graph Neural Network Explanation on Biological Network Reveals Drug-Disease Therapeutic Mechanisms]() by [Yidan Zhang](), [Yongmei Lu](), [Wen Wang](https://yjs.cd120.com/contents/547/2526.html), [Xin Sun](https://www.wcfh.com.cn/wshz_ksdhh_ksdh_lxbywstjxx_szjs/300/040058600000516.html), and [Lei Duan]().
+Code for [DDTExplainer: Mining Drug-Disease Therapeutic Mechanisms based on GNN Explainability]().
 
 ### The overall architecture of DDTExplainer
 <p align="center">
