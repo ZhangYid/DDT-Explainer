@@ -2,9 +2,6 @@
 # <ins>D</ins>rug-<ins>D</ins>isease <ins>T</ins>herapeutic Mechanisms <ins>Explainer</ins> (DDTExplainer)
 
 
-
-Code for [DDTExplainer: Mining Drug-Disease Therapeutic Mechanisms based on GNN Explainability]().
-
 ### The overall architecture of DDTExplainer
 <p align="center">
   <br />
@@ -31,25 +28,7 @@ pip install -r requirements.txt
 
 
 ### Data
-The integrated medicine information network data are stored in MIN4Explanation.mat under `data/`. The details of MIN4Explanation.mat are as follows:
-| data | descriptions |
-| --- | --- |
-| base_TvsD | The adjacency matrix of 'target-disease' edges which are collected from TTD.|
-| base_TvsI | The adjacency matrix of 'target-drug' edges which are collected from TTD.|
-| gt_IvsD | The adjacency matrix of the approved 'drug-disease' edges which are collected from TTD.|
-| all_IvsD | The adjacency matrix of the collected 'drug-disease' edges.|
-| TvsPK | The adjacency matrix of 'target-pathway' edges which are collected from TTD, where these pathway are only identified by KEGG.|
-| TvsPR | The adjacency matrix of 'target-pathway' edges which are collected from TTD, where these pathway are only identified by Reactome.|
-| TvsP | The adjacency matrix of 'target-pathway' edges which are collected from TTD.|
-| DEG_TvsD | The adjacency matrix of 'target-disease' edges which add case data preproposed by Differential Expression Gene.|
-| DEG_TvsI | The adjacency matrix of 'target-drug' edges which add case data preproposed by Differential Expression Gene.|
-| ML_TvsD | The adjacency matrix of 'target-disease' edges which add case data preproposed by Machine Learning (e.g. logistic regression, linear discriminant analysis, random forest, support vector machine).|
-| ML_TvsI | The adjacency matrix of 'target-drug' edges which add case data preproposed by Machine Learning (e.g. logistic regression, linear discriminant analysis, random forest, support vector machine).|
-| RWR_TvsD | The adjacency matrix of 'target-disease' edges which add case data preproposed by Random Walk with Restart.|
-| RWR_TvsI | The adjacency matrix of 'target-drug' edges which add case data preproposed by Random Walk with Restart.|
-
-where the cases are three disease-drug pairs: `Asthma-Theophylline`, `T2DM-Acarbose` and `T2DM-Glimepiride`.
-
+The integrated medicine information network data are under `data/`. 
 
 To facilitate understanding of the results produced by methods, we provide the 'nodeID-Name' mapping files under `data/nodes`. 
 
