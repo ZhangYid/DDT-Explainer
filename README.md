@@ -1,8 +1,6 @@
 <!-- #region -->
 # <ins>D</ins>rug-<ins>D</ins>isease <ins>T</ins>herapeutic Mechanisms <ins>Explainer</ins> (DDTExplainer)
 
-
-
 ### The overall architecture of DDTExplainer
 <p align="center">
   <br />
@@ -31,7 +29,6 @@ pip install -r requirements.txt
 ### Data
 The integrated medicine information network data are under `data/`. 
 
-
 To facilitate understanding of the results produced by methods, we provide the 'nodeID-Name' mapping files under `data/nodes`. 
 
 ### Datasets
@@ -44,7 +41,7 @@ We implement the `TransE` as the encorder module for `RGCN` model on MIN graph i
 
 
 ### Explainer Usage
-- Run PaGE-Link to explain trained GNN models 
+- Run DDTExplainer to explain trained GNN models 
   - A simple example is shown below
   ```bash
     python code/DDTExplanier.py --dataset_name=MIN_groundtruth --save_explanation
@@ -60,14 +57,8 @@ We implement the `TransE` as the encorder module for `RGCN` model on MIN graph i
     ```bash
     python code/TransE_linkpred.py --dataset_name=MIN_groundtruth --save_model --emb_dim=68 --hidden_dim=68 --out_dim=68
     ```
-    --dataset_name=aug_citation --emb_dim=128 --hidden_dim=128 --out_dim=128
-    --dataset_name=aug_citation --emb_dim=128 --hidden_dim=128 --out_dim=128
-
-  - Run `RGCN_linkpred.py` as the examples below
-    ```bash
-    python code/baselines/RGCN_linkpred.py --dataset_name=MIN_groundtruth --save_model --emb_dim=68 --hidden_dim=68 --out_dim=68
-    ```
-
+    
+  
 - Run baselines 
     - A simple example is shown below, replace `method` with `gnnexplainer_link` or `pgexplainer_link`.
     ```bash
