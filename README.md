@@ -60,7 +60,7 @@ We implement the `TransE` as the encorder module for `RGCN` model on MIN graph i
     
   
 - Run baselines 
-    - A simple example is shown below, replace `method` with `gnnexplainer_link` or `pgexplainer_link`.
+    - A simple example is shown below, replace `method` with `gnnexplainer_link`, `pgexplainer_link` or `pagelink`.
     ```bash
     python code/baselines/{method}.py --dataset_name=MIN_groundtruth --config_path=code/baselines/baseline_config.yaml --save_explanation
     ```
